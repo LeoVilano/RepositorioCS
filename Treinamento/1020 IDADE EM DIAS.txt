@@ -1,0 +1,28 @@
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main()
+        {
+            int dias, a, m, d;
+
+            dias = int.Parse(Console.ReadLine());
+                
+            a = (dias / 365);
+            m = ((dias % 365) / 30);
+            d = (((dias % 365) % 30) / 1);    
+                
+
+
+            Console.WriteLine("{0} ano(s)" ,a);
+            Console.WriteLine("{0} mes(es)" ,m);
+            Console.WriteLine("{0} dia(s)" ,d);
+
+
+
+
+        }
+    }
+}

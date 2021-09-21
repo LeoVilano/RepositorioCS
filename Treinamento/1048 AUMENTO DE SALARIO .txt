@@ -1,0 +1,71 @@
+using System;
+using System.Linq;
+using System.Reflection.Metadata;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main()
+        {
+            double si, sr, sf, i;
+
+            sf = 0;
+            sr = 0;
+            i = 0;
+
+            
+            string[] valores1;           
+
+
+            valores1 = Console.ReadLine().Split(' ');
+
+            si = double.Parse(valores1[0]);
+
+            if(si >= 0.00 && si <= 400.00)
+            {
+                sf = si * 1.15;
+                sr = sf - si;
+                i = 15;
+            }
+            else if(si >= 40.01 && si <= 800.0)
+            {
+                sf = si * 1.12;
+                sr = sf - si;
+                i = 12;
+            }
+            else if (si >= 800.01 && si <= 1200.0)
+            {
+                sf = si * 1.10;
+                sr = sf - si;
+                i = 10;
+            }
+            else if (si >= 1200.01 && si <= 2000.0)
+            {
+                sf = si * 1.07;
+                sr = sf - si;
+                i = 7;
+            }
+            else if (si >= 2000.01)
+            {
+                sf = si * 1.04;
+                sr = sf - si;
+                i = 4;
+            }
+
+            
+
+            Console.WriteLine("Novo salario: {0:f2}", sf);
+            Console.WriteLine("Reajuste ganho: {0:f2}", sr);
+            Console.WriteLine("Em percentual: {0} %", i);
+
+
+
+
+
+            
+
+
+        }
+    }
+}

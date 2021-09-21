@@ -1,0 +1,35 @@
+using System;
+
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main()
+        {
+            int n1, n2;
+            string linha1;
+
+            linha1 = Console.ReadLine();
+
+            String[] valores1 = linha1.Split(' ');
+            n1 = int.Parse(valores1[0]);
+            n2 = int.Parse(valores1[1]);          
+
+
+            if (n2 % n1 == 0 || n1 % n2 == 0)
+            {
+                Console.WriteLine("Sao Multiplos");
+            }
+            else
+            {
+                Console.WriteLine("Nao sao Multiplos");
+            }
+            
+
+            
+
+
+        }
+    }
+}

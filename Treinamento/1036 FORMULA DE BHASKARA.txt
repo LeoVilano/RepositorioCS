@@ -1,0 +1,39 @@
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main()
+        {
+            double a, b, c, delta, r1, r2;
+            string linha1;
+
+            linha1 = Console.ReadLine();
+
+            String[] valores1 = linha1.Split(' ');
+            a = double.Parse(valores1[0]);
+            b = double.Parse(valores1[1]);
+            c = double.Parse(valores1[2]);
+
+            delta = Math.Pow(b, 2) - (4 * a * c);            
+
+            if (a != 0 && delta > 0)
+            {
+                r1 = ((-b) + Math.Sqrt(delta)) / (2 * a);
+                r2 = ((-b) - Math.Sqrt(delta)) / (2 * a);
+
+                Console.WriteLine("R1 = {0:f5}", r1);
+                Console.WriteLine("R2 = {0:f5}", r2);
+            }
+            else
+            {
+                Console.WriteLine("Impossivel calcular");
+            }
+           
+
+
+
+        }
+    }
+}

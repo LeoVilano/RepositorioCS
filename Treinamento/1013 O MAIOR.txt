@@ -1,0 +1,48 @@
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main()
+        {
+            string linha1;
+            double a, b, c, soma;
+
+           
+            
+
+
+            linha1 = Console.ReadLine();
+            
+
+            String[] valores1 = linha1.Split(' ');
+            a = Convert.ToDouble(valores1[0]);
+            b = Convert.ToDouble(valores1[1]);
+            c = Convert.ToDouble(valores1[2]);
+
+            soma = (a + b + Math.Abs(a - b)) / 2;
+
+            if (soma > c)
+            {
+                Console.WriteLine("{0} eh o maior", soma);
+            }
+            else
+            {
+                Console.WriteLine("{0} eh o maior", c);
+            }
+
+
+                   
+            
+
+                     
+
+
+
+
+
+        }
+    }
+
+}

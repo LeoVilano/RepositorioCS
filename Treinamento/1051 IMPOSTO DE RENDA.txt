@@ -1,0 +1,56 @@
+using System;
+using System.Linq;
+using System.Reflection.Metadata;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main()
+        {
+            double valor, ir;           
+
+            valor = 0;
+            ir = 0;
+                               
+            valor = double.Parse(Console.ReadLine());
+
+            if(valor > 4500.00)
+            {
+                ir = ((valor - 4500.00) * 0.28) + 350.00;
+            }
+            else if(valor > 3000.00 && valor <= 4500.00)
+            {
+                ir = ((valor - 3000.00) * 0.18) + 80.00;
+            }
+            else if(valor > 2000.00 && valor <= 3000.00)
+            {
+                ir = (valor - 2000.00) * 0.08;
+            }
+            else if(valor <= 2000.00)
+            {
+                ir = 0;
+            }
+
+            if(ir == 0)
+            {
+                Console.WriteLine("Isento");
+            }
+            else
+            {
+                Console.WriteLine("R$ {0:f2}", ir);
+            }
+
+
+           
+
+            
+
+
+
+            
+
+
+        }
+    }
+}

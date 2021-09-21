@@ -1,0 +1,49 @@
+using System;
+using System.Linq;
+using System.Reflection.Metadata;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main()
+        {
+            float[] valor = new float[6];
+            int soma;
+
+            soma = 0;
+
+            valor[0] = float.Parse(Console.ReadLine());
+            valor[1] = float.Parse(Console.ReadLine());
+            valor[2] = float.Parse(Console.ReadLine());
+            valor[3] = float.Parse(Console.ReadLine());
+            valor[4] = float.Parse(Console.ReadLine());
+            valor[5] = float.Parse(Console.ReadLine());
+
+            for(int i = 0; i < valor.Length; i++)
+            {
+                if(valor[i] > 0)
+                {
+                    soma++;
+                }
+            }
+
+            Console.WriteLine("{0} valores positivos", soma);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+    }
+}

@@ -1,0 +1,66 @@
+using System;
+
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main()
+        {
+            double n1, n2, n3;
+            string linha1;
+
+            linha1 = Console.ReadLine();
+
+            String[] valores1 = linha1.Split(' ');
+            n1 = double.Parse(valores1[0]);
+            n2 = double.Parse(valores1[1]);
+            n3 = double.Parse(valores1[2]);
+
+
+            if (n1 < n2 && n1 < n3 && n2 < n3)
+            {
+                Console.WriteLine(n1);
+                Console.WriteLine(n2);
+                Console.WriteLine(n3);
+            }
+            else if (n1 < n2 && n1 < n3 && n3 < n2)
+            {
+                Console.WriteLine(n1);
+                Console.WriteLine(n3);
+                Console.WriteLine(n2);
+            }
+            else if (n2 < n1 && n2 < n3 && n1 < n3)
+            {
+                Console.WriteLine(n2);
+                Console.WriteLine(n1);
+                Console.WriteLine(n3);
+            }
+            else if (n2 < n1 && n2 < n3 && n3 < n1)
+            {
+                Console.WriteLine(n2);
+                Console.WriteLine(n3);
+                Console.WriteLine(n1);
+            }
+            else if (n3 < n1 && n3 < n2 && n1 < n2)
+            {
+                Console.WriteLine(n3);
+                Console.WriteLine(n1);
+                Console.WriteLine(n2);
+            }
+            else if (n3 < n1 && n3 < n2 && n2 < n1)
+            {
+                Console.WriteLine(n3);
+                Console.WriteLine(n2);
+                Console.WriteLine(n1);
+            }
+
+            Console.WriteLine("");
+            Console.WriteLine(n1);
+            Console.WriteLine(n2);
+            Console.WriteLine(n3);
+
+
+        }
+    }
+}

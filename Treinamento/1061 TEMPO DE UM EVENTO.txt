@@ -1,0 +1,56 @@
+using System;
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main()
+        {
+            int di, hi, mi, si, df, hf, mf, sf, dt, ht, mt, st, ti, tf, total;
+
+            string linha1, linha2, linha3, linha4, lixo;
+
+            linha1 = Console.ReadLine();
+            String[] valores1 = linha1.Split(' ');
+            lixo = (valores1[0]);
+            di = int.Parse(valores1[1]);
+
+            linha2 = Console.ReadLine();
+            String[] valores2 = linha2.Split(':');
+            hi = int.Parse(valores2[0]);
+            mi = int.Parse(valores2[1]);
+            si = int.Parse(valores2[2]);
+
+            linha3 = Console.ReadLine();
+            String[] valores3 = linha3.Split(' ');
+            lixo = (valores3[0]);
+            df = int.Parse(valores3[1]);
+
+            linha4 = Console.ReadLine();
+            String[] valores4 = linha4.Split(':');
+            hf = int.Parse(valores4[0]);
+            mf = int.Parse(valores4[1]);
+            sf = int.Parse(valores4[2]);
+
+            ti = (di * 24 * 60 * 60) + (hi * 60 * 60) + (mi * 60) + si;
+            tf = (df * 24 * 60 * 60) + (hf * 60 * 60) + (mf * 60) + sf;
+
+            total = tf - ti;
+
+            dt = total / (24 * 60 * 60);
+            total = total % (24 * 60 * 60);
+            ht = total / (60 * 60);
+            total = total % (60 * 60);
+            mt = total / 60;
+            total = total % 60;
+            st = total; 
+
+            
+            Console.WriteLine("{0} dia(s)", dt);
+            Console.WriteLine("{0} hora(s)", ht);
+            Console.WriteLine("{0} minuto(s)", mt);
+            Console.WriteLine("{0} segundo(s)", st);
+
+
+        }
+    }
+}

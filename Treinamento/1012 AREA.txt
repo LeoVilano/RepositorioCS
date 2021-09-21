@@ -1,0 +1,47 @@
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main()
+        {
+            string linha1;
+            double a, b, c, r1, r2, r3, r4, r5, pi;
+
+            pi = 3.14159;
+            
+
+
+            linha1 = Console.ReadLine();
+            
+
+            String[] valores1 = linha1.Split(' ');
+            a = Convert.ToDouble(valores1[0]);
+            b = Convert.ToDouble(valores1[1]);
+            c = Convert.ToDouble(valores1[2]);
+
+
+            r1 = (a * c) / 2;
+            r2 = pi * (Math.Pow(c, 2));
+            r3 = ((a + b) * c) / 2;
+            r4 = b * b;
+            r5 = a * b;
+             
+            
+
+            Console.WriteLine("TRIANGULO: {0:f3}", r1);
+            Console.WriteLine("CIRCULO: {0:f3}", r2);
+            Console.WriteLine("TRAPEZIO: {0:f3}", r3);
+            Console.WriteLine("QUADRADO: {0:f3}", r4);
+            Console.WriteLine("RETANGULO: {0:f3}", r5);
+
+
+
+
+
+
+        }
+    }
+
+}

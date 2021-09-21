@@ -1,0 +1,30 @@
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main()
+        {
+            
+            
+            double pi, raio, volume;
+
+            pi = 3.14159;
+
+            raio = Convert.ToDouble(Console.ReadLine());
+                  
+
+            volume = ((4.0 / 3) * pi * (Math.Pow(raio,3)));
+
+            Console.WriteLine("VOLUME = {0:f3}", volume);
+
+
+
+
+
+
+        }
+    }
+
+}

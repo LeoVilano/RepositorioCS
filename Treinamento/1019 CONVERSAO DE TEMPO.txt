@@ -1,0 +1,27 @@
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main()
+        {
+
+
+            int tempo, h, m, s;
+
+            tempo = int.Parse(Console.ReadLine());
+
+            h = tempo / 3600;
+            m = (tempo % 3600) / 60;
+            s = (tempo % 3600) % 60;
+
+            Console.WriteLine("{0}:{1}:{2}", h, m, s);
+
+            
+
+
+
+        }
+    }
+}

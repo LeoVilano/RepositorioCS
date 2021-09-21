@@ -1,0 +1,37 @@
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main()
+        {
+            string linha1, linha2;
+            float x1, y1, x2, y2, total;
+
+
+            linha1 = Console.ReadLine();
+            linha2 = Console.ReadLine();
+
+            String[] valores1 = linha1.Split(' ');
+            x1 = Convert.ToSingle(valores1[0]);
+            y1 = Convert.ToSingle(valores1[1]);
+            
+
+            String[] valores2 = linha2.Split(' ');
+            x2 = Convert.ToSingle(valores2[0]);
+            y2 = Convert.ToSingle(valores2[1]);
+           
+            total = (float)Math.Sqrt(((float)Math.Pow(x2 - x1,2))+((float)Math.Pow(y2 - y1, 2)));
+
+            Console.WriteLine("{0:f4}", total);
+
+
+
+
+           
+
+        }
+    }
+
+}

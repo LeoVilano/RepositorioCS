@@ -1,0 +1,69 @@
+using System;
+using System.Linq;
+using System.Reflection.Metadata;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main()
+        {
+            int ddd;
+            string c;
+
+            ddd = 0;
+            c = "";
+                   
+            ddd = int.Parse(Console.ReadLine());
+
+           
+
+            if (ddd == 61)
+            {
+                c = "Brasilia";
+            }
+            else if(ddd == 71)
+            {
+                c = "Salvador";
+            }
+            else if (ddd == 11)
+            {
+                c = "Sao Paulo";
+            }
+            else if (ddd == 21)
+            {
+                c = "Rio de Janeiro";
+            }
+            else if (ddd == 32)
+            {
+                c = "Juiz de Fora";
+            }
+            else if (ddd == 19)
+            {
+                c = "Campinas";
+            }
+            else if (ddd == 27)
+            {
+                c = "Vitoria";
+            }
+            else if (ddd == 31)
+            {
+                c = "Belo Horizonte";
+            }
+            else
+            {
+                c = "DDD nao cadastrado";
+            }
+
+            Console.WriteLine("{0}", c);
+            
+
+
+
+
+            
+
+
+        }
+    }
+}

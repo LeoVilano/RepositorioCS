@@ -1,0 +1,39 @@
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main()
+        {
+            string linha1, linha2;
+            int c1, q1, c2, q2;
+            double v1, v2, total;
+
+
+            linha1 = Console.ReadLine();
+            linha2 = Console.ReadLine();
+
+            String[] valores1 = linha1.Split(' ');
+            c1 = Convert.ToInt32(valores1[0]);
+            q1 = Convert.ToInt32(valores1[1]);
+            v1 = Convert.ToDouble(valores1[2]);
+
+            String[] valores2 = linha2.Split(' ');
+            c2 = Convert.ToInt32(valores2[0]);
+            q2 = Convert.ToInt32(valores2[1]);
+            v2 = Convert.ToDouble(valores2[2]);
+
+            total = (q1*v1)+(q2*v2);
+
+            Console.WriteLine("VALOR A PAGAR: R$ {0:f2}", total);
+
+
+
+
+
+
+        }
+    }
+
+}
